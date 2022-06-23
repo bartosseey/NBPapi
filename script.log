@@ -53,3 +53,264 @@
 2022-06-23 11:09:23,147:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
 2022-06-23 11:09:24,274:Created excel table.
 2022-06-23 11:09:24,447:7 record(s) affected
+2022-06-23 16:31:11,281:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:31:11,323:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 16:31:11,323:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:31:11,357:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 16:40:32,621:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:40:32,660:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 16:40:32,662:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:40:32,695:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 16:49:10,549:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:49:17,605:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 16:49:17,612:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:49:17,653:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 16:49:30,720:Created excel table.
+2022-06-23 16:50:05,416:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:50:05,452:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 16:50:05,454:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:50:05,487:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 16:51:59,289:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:51:59,325:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 16:51:59,326:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:51:59,357:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 16:53:05,510:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:53:05,546:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 16:53:05,547:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:53:05,580:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 16:53:19,431:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:53:22,482:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 16:53:22,488:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 16:53:43,526:Error NBP:
+Traceback (most recent call last):
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] Próba po³¹czenia nie powiod³a siê, poniewa¿ po³¹czona strona nie odpowiedzia³a poprawnie po ustalonym okresie czasu lub utworzone po³¹czenie nie powiod³o siê, poniewa¿ po³¹czony host nie odpowiedzia³
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\bkapu\HawatelZadanieRekrutacyjne\script.py", line 66, in <module>
+    nbp = BankAPI()
+  File "c:\Users\bkapu\HawatelZadanieRekrutacyjne\script.py", line 15, in __init__
+    self.table_eur = requests.get("http://api.nbp.pl/api/exchangerates/rates/a/eur/?format=json").json()
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\bkapu\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\bkapu\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\bkapu\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\bkapu\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1037, in _send_output
+    self.send(msg)
+  File "C:\Users\bkapu\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 975, in send
+    self.connect()
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+2022-06-23 17:39:12,481:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:39:12,527:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 17:39:12,529:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:39:12,559:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 17:45:04,776:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:45:04,821:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 17:45:04,823:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:45:04,852:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 17:45:21,721:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:45:21,757:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 17:45:21,759:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:45:21,795:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 17:45:24,525:Created excel table.
+2022-06-23 17:45:24,703:0 record(s) affected
+2022-06-23 17:46:27,159:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:46:27,196:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 17:46:27,198:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:46:48,233:Error NBP:
+Traceback (most recent call last):
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] Próba po³¹czenia nie powiod³a siê, poniewa¿ po³¹czona strona nie odpowiedzia³a poprawnie po ustalonym okresie czasu lub utworzone po³¹czenie nie powiod³o siê, poniewa¿ po³¹czony host nie odpowiedzia³
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\bkapu\HawatelZadanieRekrutacyjne\script.py", line 79, in <module>
+    nbp = BankAPI()
+  File "c:\Users\bkapu\HawatelZadanieRekrutacyjne\script.py", line 15, in __init__
+    self.table_eur = requests.get("http://api.nbp.pl/api/exchangerates/rates/a/eur/?format=json").json()
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\bkapu\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\bkapu\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\bkapu\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\bkapu\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1037, in _send_output
+    self.send(msg)
+  File "C:\Users\bkapu\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 975, in send
+    self.connect()
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\bkapu\HawatelZadanieRekrutacyjne\venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+2022-06-23 17:48:37,538:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:48:37,572:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 17:48:37,574:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:48:37,608:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 17:49:07,078:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:49:07,115:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 17:49:07,116:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:49:07,156:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 17:49:37,657:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:49:38,698:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 17:49:38,702:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:49:38,738:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 17:49:56,402:0 record(s) affected
+2022-06-23 17:53:06,951:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:53:06,987:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 17:53:06,988:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:53:07,020:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 17:54:00,757:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:54:00,793:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 17:54:00,795:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:54:00,829:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 17:57:40,568:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:57:40,611:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 17:57:40,612:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:57:40,648:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 17:57:57,212:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:58:00,257:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 17:58:00,258:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 17:58:00,288:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:23:42,894:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:23:42,944:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:23:42,945:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:23:42,981:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:24:23,055:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:24:23,090:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:24:23,092:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:24:23,122:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:24:24,274:Created excel table.
+2022-06-23 20:24:24,487:0 record(s) affected
+2022-06-23 20:25:10,210:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:25:10,244:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:25:10,246:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:25:10,275:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:25:15,245:Created excel table.
+2022-06-23 20:25:15,429:0 record(s) affected
+2022-06-23 20:25:43,637:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:25:43,671:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:25:43,673:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:25:43,704:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:26:32,528:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:26:32,566:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:26:32,568:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:26:32,597:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:26:47,557:Created excel table.
+2022-06-23 20:26:47,758:0 record(s) affected
+2022-06-23 20:27:38,015:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:27:38,059:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:27:38,061:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:27:38,093:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:27:51,040:Created excel table.
+2022-06-23 20:27:59,441:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:27:59,481:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:27:59,483:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:27:59,516:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:28:01,274:Created excel table.
+2022-06-23 20:29:52,945:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:29:52,981:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:29:52,981:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:29:53,016:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:30:04,642:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:30:04,681:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:30:04,682:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:30:04,711:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:30:13,799:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:30:13,832:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:30:13,833:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:30:13,866:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:30:15,459:Created excel table.
+2022-06-23 20:35:34,356:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:35:34,397:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:35:34,399:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:35:34,432:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:35:36,202:Created excel table.
+2022-06-23 20:38:24,041:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:38:24,076:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:38:24,077:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:38:24,112:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:38:26,287:Created excel table.
+2022-06-23 20:38:34,123:0 record(s) affected
+2022-06-23 20:38:38,962:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:38:38,997:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:38:38,998:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:38:39,027:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:39:21,862:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:39:22,910:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:39:22,915:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:39:22,946:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:46:04,334:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:46:19,396:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:46:19,399:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:46:22,460:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:46:32,494:0 record(s) affected
+2022-06-23 20:48:20,364:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:48:20,405:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:48:20,406:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:48:20,439:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:48:55,679:Created excel table.
+2022-06-23 20:48:55,854:0 record(s) affected
+2022-06-23 20:49:01,763:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:49:01,794:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:49:01,795:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:49:01,826:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:49:16,369:Created excel table.
+2022-06-23 20:49:16,552:0 record(s) affected
+2022-06-23 20:49:27,075:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:49:27,109:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:49:27,111:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:49:27,138:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:49:38,558:0 record(s) affected
+2022-06-23 20:50:03,198:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:50:03,232:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 20:50:03,235:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 20:50:03,272:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 20:50:13,292:0 record(s) affected
