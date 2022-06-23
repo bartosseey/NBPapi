@@ -1,0 +1,55 @@
+2022-06-23 11:04:05,673:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:04:05,723:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 11:04:05,725:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:04:05,757:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 11:04:36,312:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:04:36,347:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 11:04:36,349:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:04:36,378:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 11:04:37,194:Created excel table.
+2022-06-23 11:04:37,373:-1 record(s) affected
+2022-06-23 11:04:45,892:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:04:45,928:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 11:04:45,930:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:04:45,961:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 11:04:47,909:Created excel table.
+2022-06-23 11:04:48,085:-1 record(s) affected
+2022-06-23 11:05:43,422:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:05:43,458:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 11:05:43,459:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:05:43,491:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 11:05:44,714:Created excel table.
+2022-06-23 11:06:02,917:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:06:02,953:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 11:06:02,955:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:06:02,990:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 11:06:04,023:Created excel table.
+2022-06-23 11:06:04,195:-1 record(s) affected
+2022-06-23 11:07:08,120:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:07:08,152:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 11:07:08,153:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:07:08,184:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 11:07:09,427:Created excel table.
+2022-06-23 11:07:09,608:-1 record(s) affected
+2022-06-23 11:07:40,350:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:07:40,388:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 11:07:40,389:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:07:40,425:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 11:07:42,511:-1 record(s) affected
+2022-06-23 11:08:52,923:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:08:52,960:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 11:08:52,961:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:08:52,990:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 11:08:53,911:7 record(s) affected
+2022-06-23 11:08:59,828:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:08:59,863:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 11:08:59,864:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:08:59,894:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 11:09:00,721:Created excel table.
+2022-06-23 11:09:00,896:0 record(s) affected
+2022-06-23 11:09:23,078:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:09:23,112:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/usd/?format=json HTTP/1.1" 200 None
+2022-06-23 11:09:23,114:Starting new HTTP connection (1): api.nbp.pl:80
+2022-06-23 11:09:23,147:http://api.nbp.pl:80 "GET /api/exchangerates/rates/a/eur/?format=json HTTP/1.1" 200 None
+2022-06-23 11:09:24,274:Created excel table.
+2022-06-23 11:09:24,447:7 record(s) affected
