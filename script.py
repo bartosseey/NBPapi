@@ -5,7 +5,7 @@ import logging
 import pandas as pd
 import warnings
 import sys
-import signal
+from inputimeout import inputimeout, TimeoutOccurred
 
 class BankAPI:
     def __init__(self):
@@ -48,25 +48,17 @@ class ConnectSQL:
     def close(self):
         self.conn.close()
 
-
-def timer():
-    print("timer started")
-    sys.exit()
-
 def get_excel(sql):
-    choose = int(input("1. Create excel file \n0. Exit \n"))
-    if choose == 1:
-        get_data = "SELECT ProductID, DepartmentID,\
-                    Category, IDSKU, ProductName,\
-                    Quantity, UnitPrice, UnitPriceUSD,\
-                    UnitPriceEuro, Ranking, ProductDesc,\
-                    UnitsInStock, UnitsInOrder FROM mydb.product;"
-        
-        sql_query = pd.read_sql(get_data, sql.conn)
-        logging.debug("Created excel table.")
-        sql_query.to_excel('productTable.xlsx')
-    else:
-        sys.exit()
+    get_data = "SELECT ProductID, DepartmentID,\
+                Category, IDSKU, ProductName,\
+                Quantity, UnitPrice, UnitPriceUSD,\
+                UnitPriceEuro, Ranking, ProductDesc,\
+                UnitsInStock, UnitsInOrder FROM mydb.product;"
+    
+    sql_query = pd.read_sql(get_data, sql.conn)
+    print("Created excel table.")
+    logging.debug("Created excel table.")
+    sql_query.to_excel('productTable.xlsx')
 
 if __name__=="__main__":
     logging.basicConfig(filename='script.log', level=logging.DEBUG,
@@ -90,8 +82,13 @@ if __name__=="__main__":
         upd = f"UPDATE mydb.product SET UnitPriceUSD = UnitPrice/{usd_now}, UnitPriceEuro = UnitPrice/{eur_now};"
         sql.execute(upd)
         sql.commit()
-        get_excel(sql)
+        try:
+            something = inputimeout(prompt="Click enter to create excel file." , timeout=5)
+        except TimeoutOccurred:
+            sys.exit()
+        else:
+            get_excel(sql)
         
-        sql.close()
         logging.debug(f"{sql.cursor.rowcount} record(s) affected")
+        sql.close()
     
