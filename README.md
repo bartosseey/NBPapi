@@ -6,7 +6,7 @@ Po otwarciu programu jeśli w ciągu 5 sekund naciśniemy enter, utworzy się pl
 ##Rozwiązanie dot. cykliczności uruchomienia skryptu
 Według mnie, aby spełnic oczekiwanie klienta(Sprzedawca potrzebuje rozwiązania, które CYKLICZNIE raz dziennie lub na żądanie pobierze aktualny kurs walut z Narodowego Banku Polskiego i dokona aktualizacji cen dla produktów w bazie danych.) powinniśmy utworzyć automatyczne uruchomianie skryptu w Harmonogramie zadań. Limit czasu stoworzyłem właśnie w takim celu, żeby skrypt nie czekał w nieskończoność na input użykownika przy takim rozwiązaniu.
 
-##Instalacja
+###Instalacja
 1. git clone https://github.com/bartosseey/ZadanieRekrutacyjne
 2. Stwórz virtualenv: python -m venv venv 
 3. Otwórz środowisko .\venv\Scripts\activate
